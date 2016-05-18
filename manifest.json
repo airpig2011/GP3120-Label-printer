@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Label USB Printer Sample",
+  "version": "2.2",
+  "minimum_chrome_version": "25",
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "app": {
+    "background": {
+      "scripts": ["main.js"]
+    }
+  },
+    "permissions": ["usb","webview", "system.network",{
+      "usbDevices":
+          [ { "vendorId": 1137, "productId": 85 } ]
+      }, "fileSystem", "videoCapture"],
+  "optional_permissions": [ {"usbDevices": [{"vendorId": 1137, "productId": 85}]}]
+
+}

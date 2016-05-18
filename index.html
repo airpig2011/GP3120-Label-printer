@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+	<h1>GP-3120 Label maker</h1>
+
+	<div class="controls">
+	  <button id="print">Print</button>
+	  <button id="previewBtn">Preview dithering</button>
+	</div>
+
+	<div class="preview">
+	  <div class="picture">
+		  <button id="setImage"><img src='upload.svg' width='32px'></img></button>
+	  </div>
+	  <canvas id="previewCanvas" width=150 height=150></canvas>
+	  <canvas id="ditheredCanvas" width=150 height=150></canvas>
+	  <canvas id="tempCanvas" style="display:none;" width=500 height=150></canvas>
+	</div>
+
+	<script src="index.js"></script>
+
+</body>
+</html>
